@@ -10,7 +10,7 @@ class Home extends React.Component
         this.state = {data: []}
 
         this.deleteHealth = this.deleteHealth.bind(this)
-        this.healthTableList = this.healthTableList.bind
+        this.healthTableList = this.healthTableList.bind(this)
     }
 
     componentDidMount(){
