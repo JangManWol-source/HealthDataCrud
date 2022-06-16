@@ -10,11 +10,11 @@ class Home extends React.Component
         this.state = {data: []}
 
         this.deleteHealth = this.deleteHealth.bind(this)
-        this.healthTableList = this.healthTableList.bind(this)
+        this.healthTableList = this.healthTableList.bind
     }
 
     componentDidMount(){
-        axios.get("https://fanciful-liger-fbdcd4.netlify.app/")
+        axios.get("http://localhost:5000/health/")
             .then(res => {
                 this.setState({data: res.data})
             })
@@ -25,7 +25,7 @@ class Home extends React.Component
 
 
     deleteHealth(id){
-        axios.delete("https://fanciful-liger-fbdcd4.netlify.app/"+id)
+        axios.delete("http://localhost:5000/health/"+id)
             .then(res => {
                 console.log(res.data)
             })
