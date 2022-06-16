@@ -13,7 +13,7 @@ export default class EditInfo extends React.Component {
     const id = this.props.match.params.user_id;
     console.log(id);
     axios
-      .get("http://localhost:5000/health/" + id)
+      .get("https://fanciful-liger-fbdcd4.netlify.app/health/" + id)
       .then((res) => {
         console.log(res.data);
         this.setState({
@@ -41,7 +41,7 @@ export default class EditInfo extends React.Component {
     };
     axios
       .post(
-        "http://localhost:5000/health/update/" + this.props.match.params.user_id,
+        "https://fanciful-liger-fbdcd4.netlify.app/update/" + this.props.match.params.user_id,
         newData
       )
       .then((res) => {

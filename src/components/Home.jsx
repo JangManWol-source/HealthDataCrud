@@ -14,7 +14,7 @@ class Home extends React.Component
     }
 
     componentDidMount(){
-        axios.get("http://localhost:5000/health/")
+        axios.get("https://fanciful-liger-fbdcd4.netlify.app/")
             .then(res => {
                 this.setState({data: res.data})
             })
@@ -25,7 +25,7 @@ class Home extends React.Component
 
 
     deleteHealth(id){
-        axios.delete("http://localhost:5000/health/"+id)
+        axios.delete("https://fanciful-liger-fbdcd4.netlify.app/"+id)
             .then(res => {
                 console.log(res.data)
             })

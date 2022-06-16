@@ -17,7 +17,7 @@ const Add = () => {
             email: email,
             phone_number: phone
         }
-        axios.post("http://localhost:5000/health/add", data)
+        axios.post("https://fanciful-liger-fbdcd4.netlify.app/add", data)
             .then(res => window.location = "/")
             .catch(err => console.log("Error :" + err))
     }
