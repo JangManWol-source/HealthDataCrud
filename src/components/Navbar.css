@@ -1,0 +1,9 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: gray;
+    color: white;
+    width: 100%;
+    flex-wrap: nowrap;
+}
