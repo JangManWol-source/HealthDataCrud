@@ -14,7 +14,7 @@ class Home extends React.Component
     }
 
     componentDidMount(){
-        axios.get("http://localhost:5000/health/")
+        axios.get("https://mern-health-data.herokuapp.com/health/")
             .then(res => {
                 this.setState({data: res.data})
             })
@@ -25,7 +25,7 @@ class Home extends React.Component
 
 
     deleteHealth(id){
-        axios.delete("http://localhost:5000/health/"+id)
+        axios.delete("https://mern-health-data.herokuapp.com/health/"+id)
             .then(res => {
                 console.log(res.data)
             })

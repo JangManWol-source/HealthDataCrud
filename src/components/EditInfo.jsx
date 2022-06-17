@@ -13,7 +13,7 @@ export default class EditInfo extends React.Component {
     const id = this.props.match.params.user_id;
     console.log(id);
     axios
-      .get("http://localhost:5000/health/" + id)
+      .get("https://mern-health-data.herokuapp.com/health/" + id)
       .then((res) => {
         console.log(res.data);
         this.setState({
@@ -41,7 +41,7 @@ export default class EditInfo extends React.Component {
     };
     axios
       .post(
-        "http://localhost:5000/health/update/" + this.props.match.params.user_id,
+        "https://mern-health-data.herokuapp.com/update/" + this.props.match.params.user_id,
         newData
       )
       .then((res) => {

@@ -17,7 +17,7 @@ const Add = () => {
             email: email,
             phone_number: phone
         }
-        axios.post("http://localhost:5000/health/add", data)
+        axios.post("https://mern-health-data.herokuapp.com/health/add", data)
             .then(res => window.location = "/")
             .catch(err => console.log("Error :" + err))
     }
