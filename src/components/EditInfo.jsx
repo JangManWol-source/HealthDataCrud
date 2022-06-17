@@ -41,7 +41,7 @@ export default class EditInfo extends React.Component {
     };
     axios
       .post(
-        "https://mern-health-data.herokuapp.com/update/" + this.props.match.params.user_id,
+        "https://mern-health-data.herokuapp.com/health/update/" + this.props.match.params.user_id,
         newData
       )
       .then((res) => {
