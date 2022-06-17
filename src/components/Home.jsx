@@ -38,7 +38,7 @@ class Home extends React.Component
             return this.state.data.map((each) => <HealthList health={each} deleteHealth={this.deleteHealth} key={each._id}/>)        
     }
     render(){
-          return  <section class="bg-light p-2">
+          return  <section class="bg-light p-4">
           <h3 class="pb-2">Health Data Table</h3>
           <div class="table-responsive" id="no-more-tables">
               <table class="table bg-white">
